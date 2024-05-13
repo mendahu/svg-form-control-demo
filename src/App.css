@@ -72,19 +72,24 @@ form {
 
   & [role="checkbox"] {
     transition: fill 0.1s ease-in-out;
+  }
+
+  & [aria-checked="true"] {
+    fill: hsl(0, 100%, 30%);
+
+    &:hover {
+      fill: hsl(0, 100%, 40%);
+      cursor: pointer;
+    }
+  }
+
+  & [aria-checked="false"] {
+    fill: hsl(0, 0%, 85%);
 
     &:hover {
       fill: hsl(0, 0%, 65%);
       cursor: pointer;
     }
-  }
-
-  & [aria-checked="true"] {
-    fill: hsl(0, 100%, 30%);
-  }
-
-  & [aria-checked="false"] {
-    fill: hsl(0, 0%, 85%);
   }
 
   & *:focus {

@@ -6,4 +6,4 @@ Blog Post explainer: https://jakerobins.com/blog/accessible-svg-forms
 
 1. Clone the repo
 2. `npm i`
-3. `npm start`
+3. `npm run dev`
